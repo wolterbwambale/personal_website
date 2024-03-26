@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9e954654fa.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi there. <br>I'm <span>Wolter</span><br></h1>
+                <p>A Full Stack Developer</p>
+            </div>
+        </div>
+    </div>
+    <!------about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-first">
+                    <img src="image/pro.JPG " class="user-img">
+                </div>
+                <div class="col-second">
+                    <h2 class="subtitle">About Me</h2>
+                    <h3>A Web  Developer</h3>
+                    <p>With a background in developing efficient software applications in a global market. More than 1300+ hours of experience, including mentoring 10+ junior developers to achieve concrete goals on a strict deadline.
+                         Strong skills include React, Redux, JavaScript, Ruby on Rails, Figma, and Animation Libraries!</p>
+
+                         <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Soft Skills</p>
+                            <p class="tab-links" onclick="opentab('technicalkills')">Technical Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                         </div>
+                         <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li>Goal-Oriented</li>
+                                <li>Pair Programming</li>
+                                <li>Communication</li>
+                                <li>Teamwork</li>
+                                <li>Goal-Oriented</li>
+                                <li>Problem-Solving</li>
+                                <li>Positivity</li>
+                                <li>Organization</li>
+                                <li>Adaptability</li>
+                            </ul>
+                         </div>
+                         <div class="tab-content" id="technicalkills">
+                            <ul>
+                                <li>React.js</li>
+                                <li>JavaScript</li>
+                                <li>Data Structures</li>
+                                <li>C/C++</li>
+                                <li>React Native</li>
+                                <li>HTML/CSS</li>
+                                <li>Ruby</li>
+                                <li>Ruby on Rails</li>
+                                <li>TDD</li>
+                                <li>Git</li>
+                                <li>SQL</li>
+                                <li>Java</li>
+                            </ul>
+                         </div>
+                         <div class="tab-content" id="experience">
+                            <ul>
+                                <li><span>2024 - current</span><br> internship at Tech A Intern </li>
+                                <li><span>2023 - 2024</span><br> mentor at Micro verse</li>
+                                <li><span>2020 - 2021</span><br> UI/UX  designer at snappyshoppe uganda</li>
+                                <li><span>2018 - 2020</span><br> FrontEnd developer at vkonnect</li>
+                               
+                            </ul>
+                         </div>
+                         <div class="tab-content" id="education">
+                            <ul>
+                                <li><span>2023 - 2024</span><br> Full-Stack Developer at Microverse</li>
+                                <li><span>2020 - 2022</span><br>OpenMRS  </li>
+                                <li><span>2016 - 2019</span><br> BAIT at St lawrence University</li>
+                               
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="service">
+        <div class="container">
+            <h2 class="subtitle">My Services</h2>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Developer</h2>
+                    <p>I'm frontend with experience of building responsive and optimize sites</p>
+                    <a href="#">See More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <h2>Backend Developer</h2>
+                    <p>I have Experience of developing optimized Backend systems and API's</p>
+                    <a href="#">See More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-uikit"></i>
+                    <h2>UI/UX  <br>Design</h2>
+                    <p>I have design multiple landing pages and I have created systems as well</p>
+                    <a href="#">See More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="subtitle">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/budgeApp.PNG">
+                    <div class="layer">
+                        <h3>Budget App</h3>
+                        <p>The Ruby on Rails capstone project is about building a mobile web application 
+                            where you can manage your budget:</p>
+                            <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/portfolio.PNG">
+                    <div class="layer">
+                        <h3>Math Magicine App</h3>
+                        <p>This is a simple calculator project with the UI calculator design and functionality 
+                            and also a quote generator using an external API.</p>
+                            <a href="https://wolterbwambale.github.io/mobile-portfolio"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/pro.JPG">
+                    <div class="layer">
+                        <h3>Awesome Books</h3>
+                        <p>This is a project that describes how a user can add a book to a list 
+                             to read it later or to list it as complete.</p>
+                            <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-project">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h3 class="subtitle">Get In Touch</h3>
+                    <p>Feel free to reach out to me</p>
+                    <p><i class="fa-solid fa-envelope-open-text"></i>benplaan1@gmail.com</p>
+                
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/bwambale-benny-wolter"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="github.com/wolterbwambale"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/BwambaleWolter"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="image/Bwambale_Benny _Resume-1.pdf" download class="btn-project btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/mlekpdnz" method="post">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message"   rows="6" placeholder="Text here......... "></textarea>
+                        <button type="submit" class="btn-project btn3" >Send</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Copyright @ Wolter</p>
+        </div>
+    </div>
+
+<script>
+    let tablinks=document.getElementsByClassName("tab-links")
+    let tabcontents=document.getElementsByClassName("tab-content")
+
+    let sidemenu=document.getElementById("sidemenu")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link')
+        document.getElementById(tabname).classList.add('active-tab'); 
+    }
+
+    function openmenu(){
+            sidemenu.style.right= "0";
+        }
+ 
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+</script>
+
+</body>
+</html>
