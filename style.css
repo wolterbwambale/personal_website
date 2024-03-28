@@ -169,8 +169,8 @@ nav ul li a:hover::after{
 }
 
 #skills{
-    column-count: 2;
-    /* break-inside: avoid; */
+    column-count: 3;
+    break-inside: avoid;
 }
 
 #technicalkills{
